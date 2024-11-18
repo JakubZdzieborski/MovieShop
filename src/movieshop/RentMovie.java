@@ -1,34 +1,27 @@
 package movieshop;
 
-public class RentMovie {
+
+public class RentMovie extends Transaction {
 
 
-	private Client client;
-	private Movie movie;
 	private String startRentDate;
 	private String endRentDate;
 	private double dayPrice;
+
 	
-	public RentMovie(Client client, Movie movie, String startRentDate, String endRentDate, double dayPrice) {
-	
-		this.client = client;
-		this.movie = movie;
+	public RentMovie(Client client, Movie movie, double tax, String transactionId, String transactionDate, 
+			String startRentDate, String endRentDate, double dayPrice) {
+		super(client, movie, tax, transactionId, transactionDate);
 		this.startRentDate = startRentDate;
 		this.endRentDate = endRentDate;
 		this.dayPrice = dayPrice;
 	}
-	public Client getClient() {
-		return client;
+	
+	@Override
+	protected void processTranscation() {
+		System.out.println("\nProcessing transaction for renting a movie: " + toString());
 	}
-	public void setClient(Client client) {
-		this.client = client;
-	}
-	public Movie getMovie() {
-		return movie;
-	}
-	public void setMovie(Movie movie) {
-		this.movie = movie;
-	}
+
 	public String getStartRentDate() {
 		return startRentDate;
 	}
@@ -47,6 +40,14 @@ public class RentMovie {
 	public void setDayPrice(double dayPrice) {
 		this.dayPrice = dayPrice;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString();
+	}
+	
+	
+	
 
 	
 	

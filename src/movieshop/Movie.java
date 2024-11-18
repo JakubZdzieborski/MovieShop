@@ -1,6 +1,6 @@
 package movieshop;
 
-
+import java.util.Objects;
 
 public class Movie {
 	
@@ -65,6 +65,29 @@ public class Movie {
 	    public String toString() {
 	        return title + " (" + year + ")";
 	    }
+
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(director, duration, genre, title, year);
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Movie other = (Movie) obj;
+		return Objects.equals(director, other.director) && duration == other.duration
+				&& Objects.equals(genre, other.genre) && Objects.equals(title, other.title) && year == other.year;
+	}
 	
+	 
+	 
+	 
 
 }
