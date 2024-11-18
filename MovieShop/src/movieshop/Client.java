@@ -1,5 +1,7 @@
 package movieshop;
 
+import java.util.Objects;
+
 public class Client {
 
 	private String firstName;
@@ -51,5 +53,25 @@ public class Client {
 	    public String toString() {
 	        return firstName + " " + lastName;
 	    }
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(birthDate, firstName, gender, lastName);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Client other = (Client) obj;
+		return Objects.equals(birthDate, other.birthDate) && Objects.equals(firstName, other.firstName)
+				&& gender == other.gender && Objects.equals(lastName, other.lastName);
+	}
 	
+	 
+	 
 }

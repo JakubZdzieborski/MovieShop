@@ -1,43 +1,34 @@
 package movieshop;
 
-public class SellMovie {
+public class SellMovie extends Transaction {
 
-	
-	private Client client;
-	private Movie movie;
+
 	private double price;
-	private String transactionDate;
-	public SellMovie(Client client, Movie movie, double price, String transactionDate) {
-		
-		this.client = client;
-		this.movie = movie;
+	
+	public SellMovie(Client client, Movie movie, double price, String transactionDate, double tax, String transactionId) {
+		super(client, movie, tax, transactionId, transactionDate);
 		this.price = price;
-		this.transactionDate = transactionDate;
+		
 	}
 	
-	public Client getClient() {
-		return client;
-	}
-	public void setClient(Client client) {
-		this.client = client;
-	}
-	public Movie getMovie() {
-		return movie;
-	}
-	public void setMovie(Movie movie) {
-		this.movie = movie;
-	}
+
 	public double getPrice() {
 		return price;
 	}
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	public String getTransactionDate() {
-		return transactionDate;
+
+
+	@Override
+	protected void processTranscation() {
+		System.out.println("\nProcessing transaction for selling a movie: " + toString());
+
 	}
-	public void setTransactionDate(String transactionDate) {
-		this.transactionDate = transactionDate;
+	
+	@Override
+	public String toString() {
+		return super.toString();
 	}
 	
 	

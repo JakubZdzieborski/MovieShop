@@ -1,40 +1,28 @@
 package movieshop;
 
-public class BuyMovie {
+public class BuyMovie extends Transaction {
 
-	private Client client;
-	private Movie movie;
+	
 	private double price;
 	
 	
-	public BuyMovie(Client client, Movie movie, double price) {
-		
-		this.client = client;
-		this.movie = movie;
+	public BuyMovie(Client client, Movie movie, double price, double tax, String transactionId, String transactionDate) {
+		super(client, movie, tax, transactionId, transactionDate);
 		this.price = price;
 	}
 
 
-	public Client getClient() {
-		return client;
+	@Override
+	protected void processTranscation() {
+		System.out.println("\nProcessing transaction for buying a movie: " + toString());
 	}
-
-
-	public void setClient(Client client) {
-		this.client = client;
+	
+	
+	@Override
+	public String toString() {
+		return super.toString();
 	}
-
-
-	public Movie getMovie() {
-		return movie;
-	}
-
-
-	public void setMovie(Movie movie) {
-		this.movie = movie;
-	}
-
-
+	
 	public double getPrice() {
 		return price;
 	}
@@ -43,6 +31,9 @@ public class BuyMovie {
 	public void setPrice(double price) {
 		this.price = price;
 	}
+
+
+
 	
 	
 }
