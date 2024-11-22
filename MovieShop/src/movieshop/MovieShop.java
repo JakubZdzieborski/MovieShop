@@ -1,8 +1,20 @@
 package movieshop;
 
-public class MovieShop {
+public final class MovieShop {
 
-	public static void main(String[] args) {
+	static final String SHOP_NAME = "Cinema Central";
+
+	static String shopName(String shopname) {
+		return "Welcome to: " + shopname;
+	}
+	
+	static {
+		System.out.println("Shop opened! " +shopName(SHOP_NAME));
+	}
+	
+	
+	public static final void main(String[] args) {
+		
 		
 		Client client = new Client("Adam", "Smith", "1990-01-01", 'M');
 		System.out.println("Welcome " + client.getFirstName());

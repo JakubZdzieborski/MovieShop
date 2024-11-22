@@ -1,3 +1,19 @@
+Homework #4:
+-Add 5 interfaces to the existing hierarchy.
+	Added: ITitle, IGenre, IDirector, IYear, IDuration
+-Use polymorphism with the abstract class and interface from the hierarchy.
+	Used in Movie class
+-Create final class, method, variable. 
+	Final class: RentMovie, BuyMovie, SellMovie, MovieShop
+	Final method: processTransaction();
+	Final variable: SHOP_NAME
+-Create a static block, method, variable. 
+	Static block in MovieShop - printing shop open info and welcome message with shop name
+	Static method in MovieShop shopName() - returning welcome message with shop name
+	Static variable in MovieShop - SHOP_NAME
+
+==========================================================================================================================================================
+
 Homework #3:
 
 -Use polymorphism with at least one abstract class 

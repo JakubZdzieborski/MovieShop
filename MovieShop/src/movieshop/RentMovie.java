@@ -1,7 +1,7 @@
 package movieshop;
 
 
-public class RentMovie extends Transaction {
+public final class RentMovie extends Transaction {
 
 
 	private String startRentDate;
@@ -18,7 +18,7 @@ public class RentMovie extends Transaction {
 	}
 	
 	@Override
-	protected void processTranscation() {
+	protected final void processTranscation() {
 		System.out.println("\nProcessing transaction for renting a movie: " + toString());
 	}
 

@@ -1,6 +1,6 @@
 package movieshop;
 
-public class SellMovie extends Transaction {
+public final class SellMovie extends Transaction {
 
 
 	private double price;
@@ -21,7 +21,7 @@ public class SellMovie extends Transaction {
 
 
 	@Override
-	protected void processTranscation() {
+	protected final void processTranscation() {
 		System.out.println("\nProcessing transaction for selling a movie: " + toString());
 
 	}

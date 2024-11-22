@@ -1,9 +1,11 @@
 package movieshop;
 
-public class BuyMovie extends Transaction {
+public final class BuyMovie extends Transaction {
 
 	
+	
 	private double price;
+	
 	
 	
 	public BuyMovie(Client client, Movie movie, double price, double tax, String transactionId, String transactionDate) {
@@ -13,7 +15,7 @@ public class BuyMovie extends Transaction {
 
 
 	@Override
-	protected void processTranscation() {
+	protected final void processTranscation() {
 		System.out.println("\nProcessing transaction for buying a movie: " + toString());
 	}
 	
