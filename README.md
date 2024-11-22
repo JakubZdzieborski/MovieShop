@@ -18,7 +18,7 @@
 
 =================================================================
 
-Homework #3:
+# Homework #3:
 
 - Use polymorphism with at least one abstract class  
     Created abstract `Transaction` class, abstract method, and implemented it in `SellMovie`, `RentMovie`, `BuyMovie` classes.  
