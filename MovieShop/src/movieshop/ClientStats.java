@@ -1,5 +1,7 @@
 package movieshop;
 
+import exceptions.movieshop.ClientNotFoundException;
+
 public class ClientStats {
 
 	
@@ -8,7 +10,11 @@ public class ClientStats {
 	private int moviesBought;
 	private int moviesRented;
 	
-	public ClientStats(Client client, double moneySpent, int moviesBought, int moviesRented) {
+	public ClientStats(Client client, double moneySpent, int moviesBought, int moviesRented) throws ClientNotFoundException {
+		
+		if (client == null ) {
+			throw new ClientNotFoundException("Client does not exist");
+		}
 		
 		this.client = client;
 		this.moneySpent = moneySpent;

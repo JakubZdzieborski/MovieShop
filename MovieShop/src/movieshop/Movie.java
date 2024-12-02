@@ -2,6 +2,8 @@ package movieshop;
 
 import java.util.Objects;
 
+import exceptions.movieshop.InvalidMovieYearException;
+
 public class Movie implements ITitle, IGenre, IDirector, IYear, IDuration{
 	
 	private String title;
@@ -11,10 +13,14 @@ public class Movie implements ITitle, IGenre, IDirector, IYear, IDuration{
 	private int duration;
 	
 	
-	public Movie(String title, String genre, String director, int year, int duration) {
+	public Movie(String title, String genre, String director, int year, int duration) throws InvalidMovieYearException  {
 		this.title = title;
 		this.genre = genre;
 		this.director = director;
+		
+		if (year < 1888) {
+			throw new InvalidMovieYearException(year + " is too small. Minimum year is 1888");
+		}
 		this.year = year;
 		this.duration = duration;
 	}
@@ -37,6 +43,7 @@ public class Movie implements ITitle, IGenre, IDirector, IYear, IDuration{
 
 	@Override
 	public void setYear(int year) {
+		
 		this.year = year;
 	}
 

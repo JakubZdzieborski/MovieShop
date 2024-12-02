@@ -1,9 +1,21 @@
 package movieshop;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import exceptions.movieshop.ClientNotFoundException;
+import exceptions.movieshop.InvalidCharactersException;
+import exceptions.movieshop.InvalidMovieYearException;
+import exceptions.movieshop.MovieNotFoundException;
+import exceptions.movieshop.NegativePriceException;
+
 public final class MovieShop {
 
 	static final String SHOP_NAME = "Cinema Central";
 
+
+	
 	static String shopName(String shopname) {
 		return "Welcome to: " + shopname;
 	}
@@ -13,33 +25,67 @@ public final class MovieShop {
 	}
 	
 	
-	public static final void main(String[] args) {
+	public static final void main(String[] args) throws InvalidMovieYearException, NegativePriceException, MovieNotFoundException {
+		
+		
 		
 		
 		Client client = new Client("Adam", "Smith", "1990-01-01", 'M');
 		System.out.println("Welcome " + client.getFirstName());
 
-		Movie movie = new Movie("Spider-man 3", "Action/SF", "Sam Raimi" , 2007, 139);
+		//handling exception using throws
+		Movie movie = new Movie("Spider-man 3", "Action/SF", "Sam Raimi" , 1889, 139);
 		System.out.println("Movie chosen: " + movie.getTitle());
-		
+	
+		//handling exception using throws
 		BuyMovie buyMovie = new BuyMovie(client, movie, 150.0, 15.2, "021-B", "21-07-2014");
 		buyMovie.processTranscation();
 		System.out.printf("Bought from the client %s %s for the price of %.2f\n", buyMovie.getClient(), buyMovie.getMovie(), buyMovie.getPrice());
 		
-//				
-//		ClientStats clientStats = new ClientStats(client, 150.0, 1, 0);
-//		System.out.printf("\nClient %s has spent %.2f, bought %d, rented %d movies", 
-//				clientStats.getClient(), 
-//				clientStats.getMoneySpent(), 
-//				clientStats.getMoviesBought(),
-//				clientStats.getMoviesRented());
-//		
-//		ContactForm contactForm = new ContactForm(client, "test message");
-//		
-//		
-//		client.setLastName("Brown"); //Setting new last name
-//		System.out.printf("\nAdam Smith's new name last name: %s", client.getLastName());
-//		System.out.printf("\nClient %s message: %s", contactForm.getClient(), contactForm.getMessage());
+		
+		//Movie movie2 = null;
+		
+		//handling exception using throws
+		RateMovie rateMovie = new RateMovie(movie, 8.5);
+		System.out.printf("\nRating for a %s movie: %.2f", rateMovie.getMovie(), rateMovie.getRating());
+		
+		Client client2 = null;
+		
+		//Handling exception using try-catch
+		try {
+		ClientStats clientStats = new ClientStats(client2, 150.0, 1, 0);
+		System.out.printf("\nClient %s has spent %.2f, bought %d, rented %d movies", 
+				clientStats.getClient(), 
+				clientStats.getMoneySpent(), 
+				clientStats.getMoviesBought(),
+				clientStats.getMoviesRented());
+		
+		ContactForm contactForm = new ContactForm(client2, "test messagąśąśe");
+		client.setLastName("Brown"); //Setting new last name
+		System.out.printf("\nAdam Smith's new name last name: %s", client.getLastName());
+		System.out.printf("\nClient %s message: %s", contactForm.getClient(), contactForm.getMessage());
+
+		} catch (ClientNotFoundException e) {
+			 try (BufferedWriter writer = new BufferedWriter(new FileWriter("error.log", true))) {
+			        writer.write("Client not found: " + e.getMessage());
+			        writer.newLine();
+			    } catch (IOException ioException) {
+			        System.err.println("Failed to write to log file: " + ioException.getMessage());
+			    }
+		} catch (InvalidCharactersException e) {
+			System.err.println("Invalid characters");
+			
+			 try (BufferedWriter writer = new BufferedWriter(new FileWriter("error.log", true))) {
+			        writer.write("Invalid characters: " + e.getMessage());
+			        writer.newLine();
+			    } catch (IOException ioException) {
+			        System.err.println("Failed to write to log file: " + ioException.getMessage());
+			    }
+			
+		}
+		
+		
+	
 //		
 //
 //		Inventory inventory = new Inventory(movie);
@@ -62,18 +108,16 @@ public final class MovieShop {
 //		
 //		System.out.printf("\nMovie %s has been discounted for %d percent!", discount.getMovie(), percentageValue);
 //	
-//		RateMovie rateMovie = new RateMovie(movie, 8.5);
-//		System.out.printf("\nRating for a %s movie: %.2f", rateMovie.getMovie(), rateMovie.getRating());
 //		
-		RentMovie rentMovie = new RentMovie(client, movie, 23.1, "004-R", "25-06-2021", "27-06-2021", "30-06-2021", 5);
-		rentMovie.processTranscation();
-
-		System.out.printf("%s has rented %s. Start: %s End: %s Day Price: %.2f\n", 
-				rentMovie.getClient(), 
-				rentMovie.getMovie(), 
-				rentMovie.getStartRentDate(), 
-				rentMovie.getEndRentDate(), 
-				rentMovie.getDayPrice());
+//		RentMovie rentMovie = new RentMovie(client, movie, 23.1, "004-R", "25-06-2021", "27-06-2021", "30-06-2021", 5);
+//		rentMovie.processTranscation();
+//
+//		System.out.printf("%s has rented %s. Start: %s End: %s Day Price: %.2f\n", 
+//				rentMovie.getClient(), 
+//				rentMovie.getMovie(), 
+//				rentMovie.getStartRentDate(), 
+//				rentMovie.getEndRentDate(), 
+//				rentMovie.getDayPrice());
 		
 				//Calling inherited abstract method from an abstract class
 //		
@@ -81,14 +125,14 @@ public final class MovieShop {
 //		Report report = new Report("The tap is leaking in the kitchen");
 //		System.out.printf("\nReport message: %s", report.getReportMessage());
 //		
-		SellMovie sellMovie = new SellMovie(client, movie, 15.99, "2021-02-01", 19.7, "003-S");
-		sellMovie.processTranscation();
-
-		System.out.printf("Movie %s sold to a client %s for %.2f Transaction date: %s\n", 
-				sellMovie.getMovie(), 
-				sellMovie.getClient(), 
-				sellMovie.getPrice(), 
-				sellMovie.getTransactionDate());
+//		SellMovie sellMovie = new SellMovie(client, movie, 15.99, "2021-02-01", 19.7, "003-S");
+//		sellMovie.processTranscation();
+//
+//		System.out.printf("Movie %s sold to a client %s for %.2f Transaction date: %s\n", 
+//				sellMovie.getMovie(), 
+//				sellMovie.getClient(), 
+//				sellMovie.getPrice(), 
+//				sellMovie.getTransactionDate());
 //		
 //		
 //		ReturnMovie returnMovie = new ReturnMovie(movie, "2019-02-01");
@@ -115,3 +159,4 @@ public final class MovieShop {
 	}
 	
 }
+

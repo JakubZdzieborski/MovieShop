@@ -2,6 +2,7 @@ package movieshop;
 
 import java.util.Objects;
 
+
 public class Client {
 
 	private String firstName;

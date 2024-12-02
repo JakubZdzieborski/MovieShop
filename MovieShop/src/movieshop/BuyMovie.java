@@ -1,5 +1,7 @@
 package movieshop;
 
+import exceptions.movieshop.NegativePriceException;
+
 public final class BuyMovie extends Transaction {
 
 	
@@ -8,8 +10,11 @@ public final class BuyMovie extends Transaction {
 	
 	
 	
-	public BuyMovie(Client client, Movie movie, double price, double tax, String transactionId, String transactionDate) {
+	public BuyMovie(Client client, Movie movie, double price, double tax, String transactionId, String transactionDate) throws NegativePriceException {
 		super(client, movie, tax, transactionId, transactionDate);
+		if (price < 0) {
+			throw new NegativePriceException("Price cannot be less than 0");
+		}
 		this.price = price;
 	}
 
@@ -30,7 +35,10 @@ public final class BuyMovie extends Transaction {
 	}
 
 
-	public void setPrice(double price) {
+	public void setPrice(double price) throws NegativePriceException {
+		if (price < 0) {
+			throw new NegativePriceException("Price cannot be less than 0");
+		}
 		this.price = price;
 	}
 

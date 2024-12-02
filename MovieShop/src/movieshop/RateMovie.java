@@ -1,13 +1,17 @@
 package movieshop;
 
+import exceptions.movieshop.MovieNotFoundException;
+
 public class RateMovie {
 
 	
 	private Movie movie;
 	private double rating;
 	
-	public RateMovie(Movie movie, double rating) {
-	
+	public RateMovie(Movie movie, double rating) throws MovieNotFoundException{
+		if (movie == null) {
+			throw new MovieNotFoundException("Movie not found");
+		}
 		this.movie = movie;
 		this.rating = rating;
 	}
