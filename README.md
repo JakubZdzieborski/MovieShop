@@ -1,3 +1,34 @@
+# Homework #5
+
+## Create 5 custom exceptions
+
+The following custom exceptions are defined in the `exceptions/movieshop` package:
+
+- `ClientNotFoundException`
+- `InvalidCharactersException`
+- `InvalidMovieYearException`
+- `MovieNotFoundException`
+- `NegativePriceException`
+
+## Handle exceptions in 2 ways
+
+### Exceptions Handled with `throws` Declaration
+- `InvalidMovieYearException`
+- `NegativePriceException`
+- `MovieNotFoundException`
+
+### Exceptions Handled with `try-catch`
+- `ClientNotFoundException`
+- `InvalidCharactersException`
+
+## Use try-catch with resources
+- Exceptions are handled using try-catch with resources when working with `BufferedWriter` to write error messages to a log file
+  
+## Log messages to the console, file
+  - To the console using `System.out.println()` and `System.err.println()`.
+  - To a file named `error.log` using `BufferedWriter` with `FileWriter`.
+
+
 # Homework #4
 
 - **Add 5 interfaces to the existing hierarchy.**  
@@ -16,7 +47,6 @@
   - Static method in `MovieShop`: `shopName()` - Returning welcome message with shop name  
   - Static variable in `MovieShop`: `SHOP_NAME`  
 
-=================================================================
 
 # Homework #3:
 
