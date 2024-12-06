@@ -1,3 +1,22 @@
+# Homework #6
+
+## Hierarchy and Collections
+
+### Added Collections to the Hierarchy:
+1. **`HashSet<Staff> femaleStaff`** in the `StaffGenderSet` class  
+2. **`HashSet<Staff> maleStaff`** in the `StaffGenderSet` class  
+3. **`ArrayList<Staff> staffList`** in the `MovieShop` class  
+4. **`ArrayList<Membership> membershipList`** in the `MovieShop` class  
+5. **`LinkedHashMap<Staff, String> staffByDepartment`** in the `StaffDepartment` class  
+
+---
+
+## Custom LinkedList with Generics
+
+### Created in:
+**`Cart<T>`** class
+
+
 # Homework #5
 
 ## Create 5 custom exceptions
