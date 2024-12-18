@@ -1,3 +1,38 @@
+# Homework #9
+Lambda functions from the java.util.function package used in `MovieShop` class:
+
+**`Predicate<Client>`** 
+
+**`Function<Client, String>`**
+
+**`Consumer<Client>`** 
+
+**`Supplier<String>`**
+
+**`UnaryOperator<Client>`**
+
+Custom Lambda functions used in `MovieShop` class and defined in `customlambda.movieshop` package:
+
+**`GenericCheck<String, Boolean>`** - Used to check if birthdate of a client is >= 18
+
+**`ListCounter<Staff>`** - Used to count Staff
+
+**`ListParameterCounter <Staff, String>`** - Used to count Staff based on a given parameter i.e Position
+
+Enums created: `WorkDepartment`, `TransactionType`, `PaymentMethod`, `MovieGenre`, `MovieAvailability`
+
+
+# Homework #8
+Created class `UniqueWordsCount` that takes an input file and returns an output file with number of words and number of unique words
+
+Location of `UniqueWordsCount` - `wordscounter/UniqueWordsCount`
+
+inputFIle.txt and outputFile.txt are located in a root directory
+
+
+# Homework #7
+Moved project to Maven, Added plugins, Ran different phases, Built Jar file
+
 # Homework #6
 
 ## Hierarchy and Collections
