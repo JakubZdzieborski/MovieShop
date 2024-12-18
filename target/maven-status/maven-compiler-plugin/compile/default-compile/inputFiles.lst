@@ -1,5 +1,6 @@
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\Report.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\SellMovie.java
+C:\Users\zdzie\eclipse-workspace\MovieShop\src\wordscounter\UniqueWordsCount.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\ITitle.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\RentMovie.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\StaffDepartment.java
@@ -8,11 +9,16 @@ C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\MovieStatus.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\Client.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\exceptions\movieshop\MovieNotFoundException.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\module-info.java
+C:\Users\zdzie\eclipse-workspace\MovieShop\src\customlambda\movieshop\ListParameterCounter.java
+C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\TransactionType.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\IYear.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\MovieShop.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\Cart.java
+C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\MovieGenre.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\IGenre.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\Transaction.java
+C:\Users\zdzie\eclipse-workspace\MovieShop\src\customlambda\movieshop\ListCounter.java
+C:\Users\zdzie\eclipse-workspace\MovieShop\src\customlambda\movieshop\GenericCheck.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\Membership.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\RateMovie.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\exceptions\movieshop\ClientNotFoundException.java
@@ -20,7 +26,9 @@ C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\MovieReviews.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\Staff.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\IDirector.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\Inventory.java
+C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\WorkDepartment.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\ShopReviews.java
+C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\MovieAvailability.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\exceptions\movieshop\InvalidMovieYearException.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\BuyMovie.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\ShopStatus.java
@@ -32,5 +40,6 @@ C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\ClientStats.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\IDuration.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\ReturnMovie.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\Discount.java
+C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\PaymentMethod.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\movieshop\ShopStats.java
 C:\Users\zdzie\eclipse-workspace\MovieShop\src\exceptions\movieshop\NegativePriceException.java
