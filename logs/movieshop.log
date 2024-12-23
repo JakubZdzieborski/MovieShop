@@ -1,0 +1,406 @@
+2024-12-22 18:59:09 [main] INFO  movieshop.MovieShop - testing..
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - testing..
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - Filtered Movies (Duration > 150 minutes):
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - 
+Grouped by Genre:
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - Action: [The Dark Knight (2008)]
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - Sci-Fi: [Inception (2010), Interstellar (2014)]
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - Crime: [The Godfather (1972), Pulp Fiction (1994)]
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - 
+Average Duration:
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - 159.6
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - 
+Class Fields:
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.title
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.genre
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.director
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.year
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.duration
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - 
+Class Methods:
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getTitle()
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getGenre()
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public boolean movieshop.Movie.equals(java.lang.Object)
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.toString()
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.hashCode()
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getYear()
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getDuration()
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setYear(int)
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setGenre(java.lang.String)
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setTitle(java.lang.String)
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDuration(int)
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getDirector()
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDirector(java.lang.String)
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - public movieshop.Movie(java.lang.String,java.lang.String,java.lang.String,int,int) throws exceptions.movieshop.InvalidMovieYearException
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - 
+Created Instance: The Matrix (1999)
+2024-12-22 19:01:51 [main] INFO  movieshop.MovieShop - 
+Invoked getTitle Method: The Matrix
+2024-12-22 19:01:51 [Thread-1] INFO  movieshop.MovieShop - Thread-1 acquired Connection{id=1}
+2024-12-22 19:01:51 [Thread-2] INFO  movieshop.MovieShop - Thread-2 acquired Connection{id=2}
+2024-12-22 19:01:51 [pool-2-thread-2] INFO  movieshop.MovieShop - pool-2-thread-2 acquired Connection{id=3}
+2024-12-22 19:01:51 [pool-2-thread-1] INFO  movieshop.MovieShop - pool-2-thread-1 acquired Connection{id=4}
+2024-12-22 19:01:51 [pool-2-thread-3] INFO  movieshop.MovieShop - pool-2-thread-3 acquired Connection{id=5}
+2024-12-22 19:01:52 [Thread-2] INFO  movieshop.MovieShop - Thread-2 released Connection{id=2}
+2024-12-22 19:01:52 [pool-2-thread-3] INFO  movieshop.MovieShop - pool-2-thread-3 released Connection{id=5}
+2024-12-22 19:01:52 [pool-2-thread-7] INFO  movieshop.MovieShop - pool-2-thread-7 acquired Connection{id=5}
+2024-12-22 19:01:52 [pool-2-thread-6] INFO  movieshop.MovieShop - pool-2-thread-6 acquired Connection{id=3}
+2024-12-22 19:01:52 [pool-2-thread-4] INFO  movieshop.MovieShop - pool-2-thread-4 acquired Connection{id=4}
+2024-12-22 19:01:52 [Thread-1] INFO  movieshop.MovieShop - Thread-1 released Connection{id=1}
+2024-12-22 19:01:52 [pool-2-thread-5] INFO  movieshop.MovieShop - pool-2-thread-5 acquired Connection{id=2}
+2024-12-22 19:01:52 [pool-2-thread-1] INFO  movieshop.MovieShop - pool-2-thread-1 released Connection{id=4}
+2024-12-22 19:01:52 [pool-2-thread-2] INFO  movieshop.MovieShop - pool-2-thread-2 released Connection{id=3}
+2024-12-22 19:01:53 [pool-2-thread-7] INFO  movieshop.MovieShop - pool-2-thread-7 released Connection{id=5}
+2024-12-22 19:01:53 [pool-2-thread-5] INFO  movieshop.MovieShop - pool-2-thread-5 released Connection{id=2}
+2024-12-22 19:01:53 [pool-2-thread-6] INFO  movieshop.MovieShop - pool-2-thread-6 released Connection{id=3}
+2024-12-22 19:01:53 [pool-2-thread-4] INFO  movieshop.MovieShop - pool-2-thread-4 released Connection{id=4}
+2024-12-22 19:01:53 [main] INFO  movieshop.MovieShop - All tasks completed.
+2024-12-22 19:01:53 [main] INFO  movieshop.MovieShop - Starting CompletableFuture tasks:
+2024-12-22 19:01:53 [ForkJoinPool.commonPool-worker-4] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-4 acquired Connection{id=3}
+2024-12-22 19:01:53 [ForkJoinPool.commonPool-worker-5] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-5 acquired Connection{id=5}
+2024-12-22 19:01:53 [ForkJoinPool.commonPool-worker-1] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-1 acquired Connection{id=1}
+2024-12-22 19:01:53 [ForkJoinPool.commonPool-worker-3] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-3 acquired Connection{id=4}
+2024-12-22 19:01:53 [ForkJoinPool.commonPool-worker-2] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-2 acquired Connection{id=2}
+2024-12-22 19:01:54 [ForkJoinPool.commonPool-worker-5] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-5 released Connection{id=5}
+2024-12-22 19:01:54 [ForkJoinPool.commonPool-worker-7] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-7 acquired Connection{id=3}
+2024-12-22 19:01:54 [ForkJoinPool.commonPool-worker-2] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-2 released Connection{id=2}
+2024-12-22 19:01:54 [ForkJoinPool.commonPool-worker-1] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-1 released Connection{id=1}
+2024-12-22 19:01:54 [ForkJoinPool.commonPool-worker-6] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-6 acquired Connection{id=5}
+2024-12-22 19:01:54 [ForkJoinPool.commonPool-worker-3] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-3 released Connection{id=4}
+2024-12-22 19:01:54 [ForkJoinPool.commonPool-worker-4] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-4 released Connection{id=3}
+2024-12-22 19:01:55 [ForkJoinPool.commonPool-worker-6] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-6 released Connection{id=5}
+2024-12-22 19:01:55 [ForkJoinPool.commonPool-worker-7] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-7 released Connection{id=3}
+2024-12-22 19:01:58 [main] INFO  movieshop.MovieShop - All CompletableFuture tasks completed.
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - Shop opened! Welcome to: Cinema Central
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - testing..
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - Filtered Movies (Duration > 150 minutes):
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - 
+Grouped by Genre:
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - Action: [The Dark Knight (2008)]
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - Sci-Fi: [Inception (2010), Interstellar (2014)]
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - Crime: [The Godfather (1972), Pulp Fiction (1994)]
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - 
+Average Duration:
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - 159.6
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - 
+Class Fields:
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.title
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.genre
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.director
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.year
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.duration
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - 
+Class Methods:
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getTitle()
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getGenre()
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public boolean movieshop.Movie.equals(java.lang.Object)
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.toString()
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.hashCode()
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getYear()
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getDuration()
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setYear(int)
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setTitle(java.lang.String)
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getDirector()
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDirector(java.lang.String)
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDuration(int)
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setGenre(java.lang.String)
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - 
+Class Constructors:
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - public movieshop.Movie(java.lang.String,java.lang.String,java.lang.String,int,int) throws exceptions.movieshop.InvalidMovieYearException
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - 
+Created Instance: The Matrix (1999)
+2024-12-22 19:09:31 [main] INFO  movieshop.MovieShop - 
+Invoked getTitle Method: The Matrix
+2024-12-22 19:09:31 [Thread-2] INFO  movieshop.MovieShop - Thread-2 acquired Connection{id=2}
+2024-12-22 19:09:31 [Thread-1] INFO  movieshop.MovieShop - Thread-1 acquired Connection{id=1}
+2024-12-22 19:09:31 [pool-2-thread-5] INFO  movieshop.MovieShop - pool-2-thread-5 acquired Connection{id=5}
+2024-12-22 19:09:31 [pool-2-thread-3] INFO  movieshop.MovieShop - pool-2-thread-3 acquired Connection{id=3}
+2024-12-22 19:09:31 [pool-2-thread-1] INFO  movieshop.MovieShop - pool-2-thread-1 acquired Connection{id=4}
+2024-12-22 19:09:32 [pool-2-thread-2] INFO  movieshop.MovieShop - pool-2-thread-2 acquired Connection{id=2}
+2024-12-22 19:09:32 [Thread-1] INFO  movieshop.MovieShop - Thread-1 released Connection{id=1}
+2024-12-22 19:09:32 [pool-2-thread-4] INFO  movieshop.MovieShop - pool-2-thread-4 acquired Connection{id=1}
+2024-12-22 19:09:32 [Thread-2] INFO  movieshop.MovieShop - Thread-2 released Connection{id=2}
+2024-12-22 19:09:32 [pool-2-thread-1] INFO  movieshop.MovieShop - pool-2-thread-1 released Connection{id=4}
+2024-12-22 19:09:32 [pool-2-thread-3] INFO  movieshop.MovieShop - pool-2-thread-3 released Connection{id=3}
+2024-12-22 19:09:32 [pool-2-thread-5] INFO  movieshop.MovieShop - pool-2-thread-5 released Connection{id=5}
+2024-12-22 19:09:32 [pool-2-thread-7] INFO  movieshop.MovieShop - pool-2-thread-7 acquired Connection{id=4}
+2024-12-22 19:09:32 [pool-2-thread-6] INFO  movieshop.MovieShop - pool-2-thread-6 acquired Connection{id=3}
+2024-12-22 19:09:33 [pool-2-thread-2] INFO  movieshop.MovieShop - pool-2-thread-2 released Connection{id=2}
+2024-12-22 19:09:33 [pool-2-thread-4] INFO  movieshop.MovieShop - pool-2-thread-4 released Connection{id=1}
+2024-12-22 19:09:33 [pool-2-thread-6] INFO  movieshop.MovieShop - pool-2-thread-6 released Connection{id=3}
+2024-12-22 19:09:33 [pool-2-thread-7] INFO  movieshop.MovieShop - pool-2-thread-7 released Connection{id=4}
+2024-12-22 19:09:33 [main] INFO  movieshop.MovieShop - All tasks completed.
+2024-12-22 19:09:33 [main] INFO  movieshop.MovieShop - Starting CompletableFuture tasks:
+2024-12-22 19:09:33 [ForkJoinPool.commonPool-worker-2] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-2 acquired Connection{id=2}
+2024-12-22 19:09:33 [ForkJoinPool.commonPool-worker-3] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-3 acquired Connection{id=1}
+2024-12-22 19:09:33 [ForkJoinPool.commonPool-worker-4] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-4 acquired Connection{id=3}
+2024-12-22 19:09:33 [ForkJoinPool.commonPool-worker-1] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-1 acquired Connection{id=5}
+2024-12-22 19:09:33 [ForkJoinPool.commonPool-worker-5] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-5 acquired Connection{id=4}
+2024-12-22 19:09:34 [ForkJoinPool.commonPool-worker-3] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-3 released Connection{id=1}
+2024-12-22 19:09:34 [ForkJoinPool.commonPool-worker-5] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-5 released Connection{id=4}
+2024-12-22 19:09:34 [ForkJoinPool.commonPool-worker-1] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-1 released Connection{id=5}
+2024-12-22 19:09:34 [ForkJoinPool.commonPool-worker-2] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-2 released Connection{id=2}
+2024-12-22 19:09:34 [ForkJoinPool.commonPool-worker-6] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-6 acquired Connection{id=5}
+2024-12-22 19:09:34 [ForkJoinPool.commonPool-worker-4] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-4 released Connection{id=3}
+2024-12-22 19:09:34 [ForkJoinPool.commonPool-worker-7] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-7 acquired Connection{id=3}
+2024-12-22 19:09:35 [ForkJoinPool.commonPool-worker-7] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-7 released Connection{id=3}
+2024-12-22 19:09:35 [ForkJoinPool.commonPool-worker-6] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-6 released Connection{id=5}
+2024-12-22 19:09:38 [main] INFO  movieshop.MovieShop - All CompletableFuture tasks completed.
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - Shop opened! Welcome to: Cinema Central
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - testing..
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - Filtered Movies (Duration > 150 minutes):
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - 
+Grouped by Genre:
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - Action: [The Dark Knight (2008)]
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - Sci-Fi: [Inception (2010), Interstellar (2014)]
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - Crime: [The Godfather (1972), Pulp Fiction (1994)]
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - 
+Average Duration:
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - 159.6
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - 
+Class Fields:
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.title
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.genre
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.director
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.year
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.duration
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - 
+Class Methods:
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getGenre()
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getTitle()
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDuration(int)
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getDirector()
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDirector(java.lang.String)
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setGenre(java.lang.String)
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setTitle(java.lang.String)
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public boolean movieshop.Movie.equals(java.lang.Object)
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.toString()
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.hashCode()
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getYear()
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getDuration()
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setYear(int)
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - 
+Class Constructors:
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - public movieshop.Movie(java.lang.String,java.lang.String,java.lang.String,int,int) throws exceptions.movieshop.InvalidMovieYearException
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - 
+Created Instance: The Matrix (1999)
+2024-12-22 19:36:47 [main] INFO  movieshop.MovieShop - 
+Invoked getTitle Method: The Matrix
+2024-12-22 19:36:47 [Thread-2] INFO  movieshop.MovieShop - Thread-2 acquired Connection{id=1}
+2024-12-22 19:36:47 [Thread-1] INFO  movieshop.MovieShop - Thread-1 acquired Connection{id=2}
+2024-12-22 19:36:47 [pool-2-thread-2] INFO  movieshop.MovieShop - pool-2-thread-2 acquired Connection{id=3}
+2024-12-22 19:36:47 [pool-2-thread-1] INFO  movieshop.MovieShop - pool-2-thread-1 acquired Connection{id=5}
+2024-12-22 19:36:47 [pool-2-thread-3] INFO  movieshop.MovieShop - pool-2-thread-3 acquired Connection{id=4}
+2024-12-22 19:36:48 [Thread-1] INFO  movieshop.MovieShop - Thread-1 released Connection{id=2}
+2024-12-22 19:36:48 [Thread-2] INFO  movieshop.MovieShop - Thread-2 released Connection{id=1}
+2024-12-22 19:36:48 [pool-2-thread-5] INFO  movieshop.MovieShop - pool-2-thread-5 acquired Connection{id=2}
+2024-12-22 19:36:48 [pool-2-thread-4] INFO  movieshop.MovieShop - pool-2-thread-4 acquired Connection{id=1}
+2024-12-22 19:36:48 [pool-2-thread-1] INFO  movieshop.MovieShop - pool-2-thread-1 released Connection{id=5}
+2024-12-22 19:36:48 [pool-2-thread-6] INFO  movieshop.MovieShop - pool-2-thread-6 acquired Connection{id=3}
+2024-12-22 19:36:48 [pool-2-thread-7] INFO  movieshop.MovieShop - pool-2-thread-7 acquired Connection{id=4}
+2024-12-22 19:36:48 [pool-2-thread-2] INFO  movieshop.MovieShop - pool-2-thread-2 released Connection{id=3}
+2024-12-22 19:36:48 [pool-2-thread-3] INFO  movieshop.MovieShop - pool-2-thread-3 released Connection{id=4}
+2024-12-22 19:36:49 [pool-2-thread-6] INFO  movieshop.MovieShop - pool-2-thread-6 released Connection{id=3}
+2024-12-22 19:36:49 [pool-2-thread-4] INFO  movieshop.MovieShop - pool-2-thread-4 released Connection{id=1}
+2024-12-22 19:36:49 [pool-2-thread-5] INFO  movieshop.MovieShop - pool-2-thread-5 released Connection{id=2}
+2024-12-22 19:36:49 [pool-2-thread-7] INFO  movieshop.MovieShop - pool-2-thread-7 released Connection{id=4}
+2024-12-22 19:36:49 [main] INFO  movieshop.MovieShop - All tasks completed.
+2024-12-22 19:36:49 [main] INFO  movieshop.MovieShop - Starting CompletableFuture tasks:
+2024-12-22 19:36:49 [ForkJoinPool.commonPool-worker-3] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-3 acquired Connection{id=1}
+2024-12-22 19:36:49 [ForkJoinPool.commonPool-worker-2] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-2 acquired Connection{id=3}
+2024-12-22 19:36:49 [ForkJoinPool.commonPool-worker-4] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-4 acquired Connection{id=2}
+2024-12-22 19:36:49 [ForkJoinPool.commonPool-worker-5] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-5 acquired Connection{id=4}
+2024-12-22 19:36:49 [ForkJoinPool.commonPool-worker-1] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-1 acquired Connection{id=5}
+2024-12-22 19:36:50 [ForkJoinPool.commonPool-worker-2] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-2 released Connection{id=3}
+2024-12-22 19:36:50 [ForkJoinPool.commonPool-worker-6] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-6 acquired Connection{id=3}
+2024-12-22 19:36:50 [ForkJoinPool.commonPool-worker-7] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-7 acquired Connection{id=5}
+2024-12-22 19:36:50 [ForkJoinPool.commonPool-worker-1] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-1 released Connection{id=5}
+2024-12-22 19:36:50 [ForkJoinPool.commonPool-worker-3] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-3 released Connection{id=1}
+2024-12-22 19:36:50 [ForkJoinPool.commonPool-worker-5] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-5 released Connection{id=4}
+2024-12-22 19:36:50 [ForkJoinPool.commonPool-worker-4] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-4 released Connection{id=2}
+2024-12-22 19:36:52 [ForkJoinPool.commonPool-worker-6] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-6 released Connection{id=3}
+2024-12-22 19:36:52 [ForkJoinPool.commonPool-worker-7] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-7 released Connection{id=5}
+2024-12-22 19:36:55 [main] INFO  movieshop.MovieShop - All CompletableFuture tasks completed.
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - Shop opened! Welcome to: Cinema Central
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - testing..
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - Filtered Movies (Duration > 150 minutes):
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - The Godfather (1972)
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - Interstellar (2014)
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - The Dark Knight (2008)
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - Pulp Fiction (1994)
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - 
+Grouped by Genre:
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - Action: [The Dark Knight (2008)]
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - Sci-Fi: [Inception (2010), Interstellar (2014)]
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - Crime: [The Godfather (1972), Pulp Fiction (1994)]
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - 
+Average Duration:
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - 159.6
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - 
+Class Fields:
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.title
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.genre
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.director
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.year
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.duration
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - 
+Class Methods:
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public boolean movieshop.Movie.equals(java.lang.Object)
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.toString()
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.hashCode()
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getYear()
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getDuration()
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setYear(int)
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getTitle()
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getGenre()
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setGenre(java.lang.String)
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setTitle(java.lang.String)
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getDirector()
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDirector(java.lang.String)
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDuration(int)
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - 
+Class Constructors:
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - public movieshop.Movie(java.lang.String,java.lang.String,java.lang.String,int,int) throws exceptions.movieshop.InvalidMovieYearException
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - 
+Created Instance: The Matrix (1999)
+2024-12-22 19:46:56 [main] INFO  movieshop.MovieShop - 
+Invoked getTitle Method: The Matrix
+2024-12-22 19:46:56 [Thread-1] INFO  movieshop.MovieShop - Thread-1 acquired Connection{id=1}
+2024-12-22 19:46:56 [Thread-2] INFO  movieshop.MovieShop - Thread-2 acquired Connection{id=2}
+2024-12-22 19:46:56 [Thread-1] INFO  movieshop.Connection - Connection 1 is active.
+2024-12-22 19:46:56 [Thread-2] INFO  movieshop.Connection - Connection 2 is active.
+2024-12-22 19:46:56 [pool-2-thread-1] INFO  movieshop.MovieShop - pool-2-thread-1 acquired Connection{id=3}
+2024-12-22 19:46:56 [pool-2-thread-3] INFO  movieshop.MovieShop - pool-2-thread-3 acquired Connection{id=4}
+2024-12-22 19:46:56 [pool-2-thread-1] INFO  movieshop.Connection - Connection 3 is active.
+2024-12-22 19:46:56 [pool-2-thread-2] INFO  movieshop.MovieShop - pool-2-thread-2 acquired Connection{id=5}
+2024-12-22 19:46:56 [pool-2-thread-3] INFO  movieshop.Connection - Connection 4 is active.
+2024-12-22 19:46:56 [pool-2-thread-2] INFO  movieshop.Connection - Connection 5 is active.
+2024-12-22 19:46:57 [pool-2-thread-5] INFO  movieshop.MovieShop - pool-2-thread-5 acquired Connection{id=4}
+2024-12-22 19:46:57 [pool-2-thread-1] INFO  movieshop.MovieShop - pool-2-thread-1 released Connection{id=3}
+2024-12-22 19:46:57 [pool-2-thread-2] INFO  movieshop.MovieShop - pool-2-thread-2 released Connection{id=5}
+2024-12-22 19:46:57 [Thread-1] INFO  movieshop.MovieShop - Thread-1 released Connection{id=1}
+2024-12-22 19:46:57 [pool-2-thread-3] INFO  movieshop.MovieShop - pool-2-thread-3 released Connection{id=4}
+2024-12-22 19:46:57 [Thread-2] INFO  movieshop.MovieShop - Thread-2 released Connection{id=2}
+2024-12-22 19:46:57 [pool-2-thread-6] INFO  movieshop.MovieShop - pool-2-thread-6 acquired Connection{id=2}
+2024-12-22 19:46:57 [pool-2-thread-7] INFO  movieshop.MovieShop - pool-2-thread-7 acquired Connection{id=3}
+2024-12-22 19:46:57 [pool-2-thread-4] INFO  movieshop.MovieShop - pool-2-thread-4 acquired Connection{id=5}
+2024-12-22 19:46:57 [pool-2-thread-5] INFO  movieshop.Connection - Connection 4 is active.
+2024-12-22 19:46:57 [pool-2-thread-6] INFO  movieshop.Connection - Connection 2 is active.
+2024-12-22 19:46:57 [pool-2-thread-7] INFO  movieshop.Connection - Connection 3 is active.
+2024-12-22 19:46:57 [pool-2-thread-4] INFO  movieshop.Connection - Connection 5 is active.
+2024-12-22 19:46:58 [pool-2-thread-7] INFO  movieshop.MovieShop - pool-2-thread-7 released Connection{id=3}
+2024-12-22 19:46:58 [pool-2-thread-4] INFO  movieshop.MovieShop - pool-2-thread-4 released Connection{id=5}
+2024-12-22 19:46:58 [pool-2-thread-5] INFO  movieshop.MovieShop - pool-2-thread-5 released Connection{id=4}
+2024-12-22 19:46:58 [pool-2-thread-6] INFO  movieshop.MovieShop - pool-2-thread-6 released Connection{id=2}
+2024-12-22 19:46:58 [main] INFO  movieshop.MovieShop - All tasks completed.
+2024-12-22 19:46:58 [main] INFO  movieshop.MovieShop - Starting CompletableFuture tasks:
+2024-12-22 19:46:58 [ForkJoinPool.commonPool-worker-2] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-2 acquired Connection{id=5}
+2024-12-22 19:46:58 [ForkJoinPool.commonPool-worker-4] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-4 acquired Connection{id=2}
+2024-12-22 19:46:58 [ForkJoinPool.commonPool-worker-3] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-3 acquired Connection{id=4}
+2024-12-22 19:46:58 [ForkJoinPool.commonPool-worker-1] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-1 acquired Connection{id=1}
+2024-12-22 19:46:58 [ForkJoinPool.commonPool-worker-5] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-5 acquired Connection{id=3}
+2024-12-22 19:46:58 [ForkJoinPool.commonPool-worker-2] INFO  movieshop.Connection - Connection 5 is active.
+2024-12-22 19:46:58 [ForkJoinPool.commonPool-worker-1] INFO  movieshop.Connection - Connection 1 is active.
+2024-12-22 19:46:58 [ForkJoinPool.commonPool-worker-5] INFO  movieshop.Connection - Connection 3 is active.
+2024-12-22 19:46:58 [ForkJoinPool.commonPool-worker-4] INFO  movieshop.Connection - Connection 2 is active.
+2024-12-22 19:46:58 [ForkJoinPool.commonPool-worker-3] INFO  movieshop.Connection - Connection 4 is active.
+2024-12-22 19:46:59 [ForkJoinPool.commonPool-worker-6] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-6 acquired Connection{id=3}
+2024-12-22 19:46:59 [ForkJoinPool.commonPool-worker-5] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-5 released Connection{id=3}
+2024-12-22 19:46:59 [ForkJoinPool.commonPool-worker-7] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-7 acquired Connection{id=5}
+2024-12-22 19:46:59 [ForkJoinPool.commonPool-worker-4] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-4 released Connection{id=2}
+2024-12-22 19:46:59 [ForkJoinPool.commonPool-worker-1] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-1 released Connection{id=1}
+2024-12-22 19:46:59 [ForkJoinPool.commonPool-worker-3] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-3 released Connection{id=4}
+2024-12-22 19:46:59 [ForkJoinPool.commonPool-worker-2] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-2 released Connection{id=5}
+2024-12-22 19:46:59 [ForkJoinPool.commonPool-worker-6] INFO  movieshop.Connection - Connection 3 is active.
+2024-12-22 19:46:59 [ForkJoinPool.commonPool-worker-7] INFO  movieshop.Connection - Connection 5 is active.
+2024-12-22 19:47:00 [ForkJoinPool.commonPool-worker-7] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-7 released Connection{id=5}
+2024-12-22 19:47:00 [ForkJoinPool.commonPool-worker-6] INFO  movieshop.MovieShop - ForkJoinPool.commonPool-worker-6 released Connection{id=3}
+2024-12-22 19:47:03 [main] INFO  movieshop.MovieShop - All CompletableFuture tasks completed.
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - Shop opened! Welcome to: Cinema Central
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - testing..
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - Filtered Movies (Duration > 150 minutes):
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - The Godfather (1972)
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - Interstellar (2014)
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - The Dark Knight (2008)
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - Pulp Fiction (1994)
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - 
+Grouped by Genre:
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - Action: [The Dark Knight (2008)]
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - Sci-Fi: [Inception (2010), Interstellar (2014)]
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - Crime: [The Godfather (1972), Pulp Fiction (1994)]
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - 
+Average Duration:
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - 159.6
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - 
+Class Fields:
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.title
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.genre
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.director
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.year
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.duration
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - 
+Class Methods:
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getGenre()
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getTitle()
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public boolean movieshop.Movie.equals(java.lang.Object)
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.toString()
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.hashCode()
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getYear()
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getDuration()
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setYear(int)
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setGenre(java.lang.String)
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setTitle(java.lang.String)
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDuration(int)
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getDirector()
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDirector(java.lang.String)
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - 
+Class Constructors:
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - public movieshop.Movie(java.lang.String,java.lang.String,java.lang.String,int,int) throws exceptions.movieshop.InvalidMovieYearException
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - 
+Created Instance: The Matrix (1999)
+2024-12-23 13:05:36 [main] INFO  movieshop.MovieShop - 
+Invoked getTitle Method: The Matrix
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - Shop opened! Welcome to: Cinema Central
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - testing..
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - Filtered Movies (Duration > 150 minutes):
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - The Godfather (1972)
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - Interstellar (2014)
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - The Dark Knight (2008)
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - Pulp Fiction (1994)
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - 
+Grouped by Genre:
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - Action: [The Dark Knight (2008)]
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - Sci-Fi: [Inception (2010), Interstellar (2014)]
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - Crime: [The Godfather (1972), Pulp Fiction (1994)]
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - 
+Average Duration:
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - 159.6
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - 
+Class Fields:
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.title
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.genre
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - private java.lang.String movieshop.Movie.director
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.year
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - private int movieshop.Movie.duration
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - 
+Class Methods:
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getTitle()
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getGenre()
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public boolean movieshop.Movie.equals(java.lang.Object)
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.toString()
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.hashCode()
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getYear()
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public int movieshop.Movie.getDuration()
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setYear(int)
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDuration(int)
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setDirector(java.lang.String)
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public java.lang.String movieshop.Movie.getDirector()
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setGenre(java.lang.String)
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public void movieshop.Movie.setTitle(java.lang.String)
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - 
+Class Constructors:
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - public movieshop.Movie(java.lang.String,java.lang.String,java.lang.String,int,int) throws exceptions.movieshop.InvalidMovieYearException
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - 
+Created Instance: The Matrix (1999)
+2024-12-23 13:07:30 [main] INFO  movieshop.MovieShop - 
+Invoked getTitle Method: The Matrix
