@@ -1,3 +1,52 @@
+# Homework #10
+Add 7 collection streaming in the hierarchy with terminal and non-terminal operations:
+
+Non-Terminal
+
+**`filter()`**
+**`collect()`**
+**`mapToInt()`**
+**`sorted()`**
+**`distinct()`**
+**`limit()`**
+**`map()`**
+
+Terminal
+
+**`forEach()`**
+**`average()`**
+
+Extracting information using reflection
+
+For class
+
+**`Class<?> movieClass = Class.forName("movieshop.Movie");`**
+
+For fields
+
+**`Field field : movieClass.getDeclaredFields()`**
+
+Fot methods
+
+**`Method method : movieClass.getDeclaredMethods()`**
+
+For constructor
+
+**`Constructor<?> constructor : movieClass.getDeclaredConstructors()`**
+
+
+Creating an instance
+
+**`Constructor<?> movieConstructor = movieClass.getConstructor(String.class, String.class, String.class, int.class, int.class);`**
+
+**`Object movieInstance = movieConstructor.newInstance("The Matrix", "Sci-Fi", "The Wachowskis", 1999, 136);`**
+
+Invoking a method
+
+**`Method getTitleMethod = movieClass.getMethod("getTitle");`**
+
+**`Object title = getTitleMethod.invoke(movieInstance);`**
+
 # Homework #9
 Lambda functions from the java.util.function package used in `MovieShop` class:
 
