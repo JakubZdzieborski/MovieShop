@@ -1,8 +1,13 @@
 package movieshop;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import exceptions.movieshop.NegativePriceException;
 
 public final class BuyMovie extends Transaction {
+
+	private static final Logger logger = LogManager.getLogger(BuyMovie.class);
 
 	
 	
@@ -21,7 +26,7 @@ public final class BuyMovie extends Transaction {
 
 	@Override
 	protected final void processTranscation() {
-		System.out.println("\nProcessing transaction for buying a movie: " + toString());
+		logger.info("\nProcessing transaction for buying a movie: " + toString());
 	}
 	
 	

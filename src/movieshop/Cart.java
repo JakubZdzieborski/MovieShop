@@ -1,6 +1,13 @@
 package movieshop;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class Cart<T> {
+	
+	private static final Logger logger = LogManager.getLogger(Cart.class);
+
+	
     private Node<T> head;
     private int size;
 
@@ -57,7 +64,7 @@ public class Cart<T> {
     public void printList() {
         Node<T> current = head;
         while (current != null) {
-            System.out.println(current.data);
+        	logger.info(current.data);
             current = current.next;
         }
     }

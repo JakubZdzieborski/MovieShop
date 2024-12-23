@@ -1,7 +1,11 @@
 package movieshop;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public final class RentMovie extends Transaction {
+	
+	private static final Logger logger = LogManager.getLogger(RentMovie.class);
 
 
 	private String startRentDate;
@@ -19,7 +23,7 @@ public final class RentMovie extends Transaction {
 	
 	@Override
 	protected final void processTranscation() {
-		System.out.println("\nProcessing transaction for renting a movie: " + toString());
+		logger.info("\nProcessing transaction for renting a movie: " + toString());
 	}
 
 	public String getStartRentDate() {

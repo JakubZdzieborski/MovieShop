@@ -1,6 +1,10 @@
 package movieshop;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public final class SellMovie extends Transaction {
+	private static final Logger logger = LogManager.getLogger(SellMovie.class);
 
 
 	private double price;
@@ -22,7 +26,7 @@ public final class SellMovie extends Transaction {
 
 	@Override
 	protected final void processTranscation() {
-		System.out.println("\nProcessing transaction for selling a movie: " + toString());
+		logger.info("\nProcessing transaction for selling a movie: " + toString());
 
 	}
 	
