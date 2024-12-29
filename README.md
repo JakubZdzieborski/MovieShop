@@ -1,3 +1,45 @@
+# Homework #11
+
+### 1. Create Threads using `Runnable` and `Thread`
+- **Runnable Implementation**:  
+  - Defined in the `RunnableThread` class.
+- **Thread Implementation**:  
+  - Defined in `ThreadThread` class
+
+### 2. Create Connection Pool
+- **`Connection` Class**:  
+  - A mock implementation of a connection object with a unique ID
+  - Simulates real-world database connections.
+  
+- **ConnectionPool Class**:  
+  - Utilizes `BlockingQueue` to store and manage connections.
+  - Implements thread-safe methods:
+    - `getConnection`: Acquires a connection, blocking if none are available.
+    - `releaseConnection`: Returns a connection to the pool.
+  - Ensures lazy initialization:
+    - Constructor is private.
+    - Access is provided via a `getInstance` method.
+
+### 3. Initialize Pool with Size 5
+- **Pool Initialization**:  
+  - In the `ConnectionPool` constructor, 5 mock `Connection` objects are created and added to the `BlockingQueue`.
+  
+- **Load Pool with Threads**:  
+  - Implemented in the `ConnectionPoolApp` class.
+  - Uses `ExecutorService` with a thread pool of 7 threads.
+  - Simulates threads attempting to acquire and release connections:
+    - The first 5 threads acquire connections immediately.
+    - The remaining 2 threads wait until a connection is released.
+
+### 4. Implement with `CompletableStage`
+- **Asynchronous Solution**:
+  - Used `CompletableFuture` which implements `CompletabelStage` 
+  - Implemented in the `CompletableFutureExample` class.
+  - Uses `CompletableFuture.supplyAsync()` to simulate asynchronous connection acquisition.
+  - Demonstrates:
+    - Threads waiting for a connection if all are busy.
+    - Non-blocking and asynchronous behavior for increased efficiency.
+
 # Homework #10
 Add 7 collection streaming in the hierarchy with terminal and non-terminal operations:
 
